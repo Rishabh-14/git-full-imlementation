@@ -12,7 +12,7 @@ def read_tree(repo_path, tree_sha):
 
     decompressed_data = zlib.decompress(object_data)
 
-    null_byte_index = object.content.index(b'x\00')
+    null_byte_index = decompressed_data.index(b'x\00')
     object_content = decompressed_data[null_byte_index+1:]
 
     tree = []
