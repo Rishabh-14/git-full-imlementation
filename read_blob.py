@@ -16,8 +16,8 @@ def read_blob(repo_path,blob_sha):
 
     return object_data.decode('utf-8')
 
-repo_path = "/path/to/your/repo"  # replace with your repository path
-blob_sha = "your_blob_sha"  # replace with your blob SHA
+repo_path = "/mnt/c/Users/Rishabh/OneDrive/Desktop/github/git-full-imlementation"  # replace with your repository path
+blob_sha = "50262eafc16e0d7b0b0e7428d09f2ab8a791fa62"  # replace with your blob SHA
 
 # Call the function and print the content of the blob
 print(read_blob(repo_path, blob_sha))
